@@ -10,7 +10,6 @@ public class Boss extends Person {
     }
 
     public boolean JoinAPerson(Employee employee) {
-
         if (employee.GetCountCompany() < 5) {
             if (company.CheckPerson(employee)) {
                 return false;
