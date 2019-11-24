@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -14,22 +12,11 @@ public class Main {
         Employee ThirdEmployee = new Employee("Максимов", "Максим", "Максимович");
         Employee FouthEmployee = new Employee("Николаев", "Николай", "Николаевич");
 
-        ArrayList<Boss> Bosses = new ArrayList<>();
-        ArrayList<Employee> Employees = new ArrayList<>();
-
-        Bosses.add(BossMicrosoft);
-        Bosses.add(BossSamsung);
-
-        Employees.add(FirstEmployee);
-        Employees.add(SecondEmployee);
-        Employees.add(ThirdEmployee);
-        Employees.add(FouthEmployee);
-
-        Bosses.get(0).JoinAPerson(Employees.get(0));
-        Bosses.get(0).JoinAPerson(Employees.get(1));
-        Bosses.get(1).JoinAPerson(Employees.get(2));
-        Bosses.get(1).JoinAPerson(Employees.get(3));
-        Bosses.get(1).JoinAPerson(Employees.get(0));
+        BossMicrosoft.JoinAPerson(FirstEmployee);
+        BossMicrosoft.JoinAPerson(SecondEmployee);
+        BossSamsung.JoinAPerson(ThirdEmployee);
+        BossSamsung.JoinAPerson(FouthEmployee);
+        BossSamsung.JoinAPerson(FirstEmployee);
 
         System.out.println(BossMicrosoft);
 
@@ -39,7 +26,7 @@ public class Main {
 
         System.out.println("*******************************");
 
-        Bosses.get(1).DismissPerson(Employees.get(2));
+        BossSamsung.DismissPerson(ThirdEmployee);
 
         System.out.println(BossSamsung);
     }
