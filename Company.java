@@ -19,7 +19,7 @@ public class Company {
 
     public final Employee GetPerson (final String Surname, final String Name, final String Patronymic) {
         for (Employee employee : PersonOfCompany) {
-            if (employee.comparision(Surname, Name, Patronymic)) {
+            if (employee.equals(Surname, Name, Patronymic)) {
                 return employee;
             }
         }
@@ -29,7 +29,7 @@ public class Company {
 
     public boolean CheckPerson (final String Surname, final String Name, final String Patronymic) {
         for (Employee employee : PersonOfCompany) {
-            if (employee.comparision(Surname, Name, Patronymic)) {
+            if (employee.equals(Surname, Name, Patronymic)) {
                 return true;
             }
         }
