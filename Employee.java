@@ -4,17 +4,17 @@ public class Employee extends Person {
 
     private int CompanyCount = 0;
 
-    public Employee (String Surname, String Name, String Patronymic) {
+    public Employee(String Surname, String Name, String Patronymic) {
         super(Surname, Name, Patronymic);
     }
 
 
 
-    public int GetCountCompany () {
+    public int GetCountCompany() {
         return CompanyCount;
     }
 
-    public boolean JoinACompany (Boss boss) {
+    public boolean JoinACompany(Boss boss) {
         if (boss.JoinAPerson(this)) {
             CompanyCount++;
             return true;
@@ -23,12 +23,12 @@ public class Employee extends Person {
         }
     }
 
-    public void LeaveACompany (Boss boss) {
+    public void LeaveACompany(Boss boss) {
         boss.DismissPerson(this);
     }
 
     @Override
-    public String toString () {
+    public String toString() {
         return GetSurnamePerson()
                 + " " + GetNamePerson()
                 + " " + GetPatronymicPerson();
