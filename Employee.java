@@ -8,8 +8,6 @@ public class Employee extends Person {
         super(Surname, Name, Patronymic);
     }
 
-
-
     public int GetCountCompany() {
         return CompanyCount;
     }
