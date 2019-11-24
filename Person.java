@@ -30,7 +30,7 @@ public class Person {
                 + " " + Patronymic;
     }
 
-    public boolean comparision(String surname, String name, String patronymic) {
+    public boolean equals(String surname, String name, String patronymic) {
         return this.Surname.equals(surname) && this.Name.equals(name) && this.Patronymic.equals(patronymic);
     }
 }
