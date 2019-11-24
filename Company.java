@@ -7,17 +7,17 @@ public class Company {
 
     private ArrayList<Employee>PersonOfCompany = new ArrayList<Employee>();
 
-    public Company (String NameOfCompany) {
+    public Company(String NameOfCompany) {
         this.NameOfCompany = NameOfCompany;
     }
 
-    public final String GetNameOfCompany () { return NameOfCompany; }
+    public final String GetNameOfCompany() { return NameOfCompany; }
 
-    public Employee GetNameOfPerson (int i) {
+    public Employee GetNameOfPerson(int i) {
         return PersonOfCompany.get(i);
     }
 
-    public final Employee GetPerson (final String Surname, final String Name, final String Patronymic) {
+    public final Employee GetPerson(final String Surname, final String Name, final String Patronymic) {
         for (Employee employee : PersonOfCompany) {
             if (employee.equals(Surname, Name, Patronymic)) {
                 return employee;
@@ -27,7 +27,7 @@ public class Company {
         return null;
     }
 
-    public boolean CheckPerson (final String Surname, final String Name, final String Patronymic) {
+    public boolean CheckPerson(final String Surname, final String Name, final String Patronymic) {
         for (Employee employee : PersonOfCompany) {
             if (employee.equals(Surname, Name, Patronymic)) {
                 return true;
@@ -37,7 +37,7 @@ public class Company {
         return false;
     }
 
-    public int GetCountPerson () {
+    public int GetCountPerson() {
         return PersonOfCompany.size();
     }
 
