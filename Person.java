@@ -5,26 +5,26 @@ public class Person {
     private String Surname;
     private String Patronymic;
 
-    public Person (String Surname, String Name, String Patronymic) {
+    public Person(String Surname, String Name, String Patronymic) {
         this.Surname = Surname;
         this.Name = Name;
         this.Patronymic = Patronymic;
     }
 
-    public final String GetNamePerson () {
+    public final String GetNamePerson() {
         return Name;
     }
 
-    public final String GetSurnamePerson () {
+    public final String GetSurnamePerson() {
         return Surname;
     }
 
-    public final String GetPatronymicPerson () {
+    public final String GetPatronymicPerson() {
         return Patronymic;
     }
 
     @Override
-    public String toString () {
+    public String toString() {
         return Surname
                 + " " + Name
                 + " " + Patronymic;
