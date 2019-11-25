@@ -1,4 +1,4 @@
-package com.company;
+package CompanyPackage;
 
 public class Employee extends Person {
 
@@ -23,10 +23,11 @@ public class Employee extends Person {
 
     public void LeaveACompany(Boss boss) {
         boss.DismissPerson(this);
+        CompanyCount--;
     }
 
     @Override
-    public String toString() {
+    public String toString () {
         return GetSurnamePerson()
                 + " " + GetNamePerson()
                 + " " + GetPatronymicPerson();
