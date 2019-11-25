@@ -1,4 +1,4 @@
-package com.company;
+package CompanyPackage;
 
 import java.util.ArrayList;
 
@@ -45,11 +45,11 @@ public class Company {
         return PersonOfCompany.contains(employee);
     }
 
-    public void addEmployee(Employee employee) {
+    void addEmployee(Employee employee) {
         PersonOfCompany.add(employee);
     }
 
-    public void removeEmployee(Employee employee) {
+    void removeEmployee(Employee employee) {
         PersonOfCompany.remove(employee);
     }
 }
