@@ -1,4 +1,4 @@
-package com.company;
+package CompanyPackage;
 
 public class Boss extends Person {
 
@@ -28,7 +28,7 @@ public class Boss extends Person {
     }
 
     @Override
-    public String toString() {
+    public String toString () {
         int count = 1;
         String cout = "Название компании: " + company.GetNameOfCompany() + "\n"
                 + "Босс: " + GetSurnamePerson()
