@@ -2,4 +2,4 @@
 ======================
 Выходные данные:
 ================
-![](https://github.com/AnnaGorina/OOPLab2/blob/master/Изображение1.jpg)
+![](https://github.com/AnnaGorina/OOPLab2/blob/master/Изображение.jpg)
